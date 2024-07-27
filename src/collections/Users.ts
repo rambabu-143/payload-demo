@@ -1,3 +1,4 @@
+import Testcomp from '@/components/Testcomp'
 import type { CollectionConfig } from 'payload'
 
 export const Users: CollectionConfig = {
@@ -9,5 +10,15 @@ export const Users: CollectionConfig = {
   fields: [
     // Email added by default
     // Add more fields as needed
+
+    {
+      name: 'test',
+      type: 'ui',
+      admin: {
+        components: {
+          Field: Testcomp,
+        },
+      },
+    },
   ],
 }
